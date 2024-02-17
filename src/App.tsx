@@ -1,24 +1,26 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect, useState } from "react";
+
+import "./App.css";
+import CurrentExchangeRate from "./components/translators/CurrentExangeRate/CurrentExchangeRate";
+import ExchangeCrypto from "./components/translators/ExchangeCrypto/ExchangeCrypto";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="wrapper">
+        <header className="header">
+          <div className="header__container _container">
+            <div className="header__content">
+              <div className="header__main-info">
+                <div className="header__title">Currency Translator</div>
+                <div className="header__text">by Artur Zadniprovskyi</div>
+              </div>
+            </div>
+          </div>
+        </header>
+        <CurrentExchangeRate />
+        <ExchangeCrypto />
+      </div>
     </div>
   );
 }

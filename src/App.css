@@ -1,38 +1,164 @@
-.App {
-  text-align: center;
+@import url(https://fonts.googleapis.com/css?family=Exo+2:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+@import url(https://fonts.googleapis.com/css?family=PT+Sans:regular,italic,700,700italic);
+
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+:focus,
+:active {
+  outline: none;
+}
+a:focus,
+a:active {
+  outline: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+nav,
+footer,
+header,
+aside {
+  display: block;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+input,
+button,
+textarea {
+  font-family: inherit;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+input::-ms-clear {
+  display: none;
+}
+button {
+  cursor: pointer;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+/*--------------------*/
+
+body {
+  background: #e5e5e5;
+  font-family: "Exo 2";
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+._container {
+  max-width: 1240px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 0 15px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.header {
+  padding-top: 50px;
+  padding-bottom: 70px;
+
+  background-image: url("./imgs/Rectangle\ 1.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 45% 100%;
+}
+
+.header__content {
+  display: flex;
+}
+
+.header__main-info {
+  margin-right: 40px;
+}
+
+.header__title {
+  font-weight: 600;
+  font-size: 52px;
+  line-height: 125%;
+  color: #363738;
+
+  margin-bottom: 40px;
+  margin-top: 80px;
+}
+
+.header__text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #6b6b6c;
+
+  margin-bottom: 40px;
+}
+
+.header__link {
+  display: inline-block;
+  border-bottom: 3px solid #ffce50;
+}
+
+.header__link a {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  color: #363738;
+}
+
+.header__img img {
+  width: 635px;
+  height: 505px;
+}
+
+@media (max-width: 550px) {
+  .header__title {
+    margin-top: 30px;
   }
 }
+
+/*================================== */
